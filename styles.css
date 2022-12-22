@@ -1,3 +1,8 @@
+@import url("https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css");
+:root {
+    --pink: #ff3232;
+    --gray: #505050;
+}
 * {
     margin: 0;
     padding: 0;
@@ -19,6 +24,7 @@ nav {
     left: 10px;
     width: 150px;
     padding: 0 20px;
+    text-shadow: 0 0 1px;
 }
 .nav-menu{
     width: calc(100vw - 160px - 30px);
@@ -37,6 +43,8 @@ nav {
     text-align: center;
     width: calc((100vw - 150px)/3);
     border-radius: 2px;
+    text-shadow: 0 0 1px;
+
 }
 .nav-menu-item:hover {
     background-image: linear-gradient(to right, #85bd76 20%, #eaf1f9 50%, #85bd76 80%);
@@ -52,10 +60,11 @@ h2, h3 {
     font-family: 'Roboto Condensed', sans-serif;
     margin: 15px;
     color: #2f2d52;
-    background-image: linear-gradient(to right, #eaf1f9 10%, #c0c0ca 80%, #eaf1f9);
+    background-image: linear-gradient(to right, #eaf1f9 5%, #c0c0ca 50%, #eaf1f9 95%);
     width:max-content;
     height: 2rem;
     letter-spacing: 2px;
+    text-shadow: 0 0 1px;
 
 }
 h2 {
@@ -101,23 +110,12 @@ h3 {
 }
 .article > div {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 2px 5px;
-    background-color: rgba(133,189,118, .5);
+    background-color: rgba(133,189,118, .7);
     height: 2.5rem;
     border-radius: 5px;
-}
-.add-button {
-    width: 10vw;
-    height: 100%;
-    font-family: 'Roboto Condensed', sans-serif;
-    background-color: #2f2d52	;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.3vw;
-    color: white;
-    text-align: center;
 }
 .cart > div {
     display: flex;
@@ -129,9 +127,12 @@ h3 {
 .cart > h2 {
     background-image: none;
     background-color: #2f2d5260;
-    padding: 1px 20px;
-    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     margin-bottom: 30px;
+    height: 50px;
+    width: 30vw;
 }
 .cart strong, .cart span {
     font-family: 'Roboto Condensed', sans-serif;
@@ -145,8 +146,36 @@ h3 {
     background-color: #2f2d52	;
     border: none;
     border-radius: 4px;
-    font-size: 1.6vw;
+    font-size: 1.1rem;
     color: white;
     text-align: center;
     padding: 10px;
+}
+i {
+    font-family: FontAwesome;
+    font-style: normal;
+    color: #2f2d52;
+    font-size: 1.2rem;
+}
+.cart i {
+
+    font-size: 30px;
+}
+.buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 1.2rem;
+}
+.add-button {
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: #2f2d52;
+    border: none;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 1.01rem;
+}
+.bi-heart-fill {
+    color: #505050;
 }
